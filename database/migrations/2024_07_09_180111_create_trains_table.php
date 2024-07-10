@@ -22,6 +22,7 @@ return new class extends Migration
             $table->tinyInteger('cars_number')->default(2);
             $table->boolean('on_time')->default(false);
             $table->boolean('is_cancelled')->default(false);
+            $table->timestamos();
         });
     }
 
