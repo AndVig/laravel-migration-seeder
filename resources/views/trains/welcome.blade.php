@@ -5,8 +5,8 @@
 <div class="row">
     @foreach ($trains as $train)
     <div class="col-4">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="card my-2">
+            
             <div class="card-body">
                 <h5 class="card-title">{{$train->train_code}}</h5>
                 <p class="card-text">
