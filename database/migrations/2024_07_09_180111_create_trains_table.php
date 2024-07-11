@@ -17,12 +17,12 @@ return new class extends Migration
             $table->string('departure_station',100);
             $table->string('arrival_station',100);
             $table->dateTime('departure_time');
-            $table->dateTime('departure_arrival');
+            $table->dateTime('arrival_time');
             $table->string('train_code',20);
             $table->tinyInteger('cars_number')->default(2);
             $table->boolean('on_time')->default(false);
             $table->boolean('is_cancelled')->default(false);
-            $table->timestamos();
+            $table->timestamps();
         });
     }
 
